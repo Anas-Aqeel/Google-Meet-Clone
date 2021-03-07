@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    padding: 15px 15px 5px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    color: rgb(102, 102, 102);
+}
+.logo{
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: -221;
+}
+.logo_span{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-left: 3px;
+}
+.date-parnt{
+    display: flex;
+}
+.date{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-grow: 1;
+    margin-left: 12px;
+}
+.new__date{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.date span{
+    padding: 0 4px;
+}
+.day{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.icons,.setting{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10px;
+}
+.icons span{
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}
+.icons span i, .setting span i{
+    color: grey;
+}
+.setting{
+    margin-left: 22px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* flex-grow: 1;  */
+}
+.setting span{
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+}
+.account{
+    background-color: brown;
+    color: white;
+}
+.content__wraper{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+.first-div{
+    width: 40%;
+    display: flex;
+    padding-bottom: 30px;
+    justify-content: flex-start;
+    border-bottom: thin solid lightgray ;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: thin solid lightgray;
+}
+.fst-heading{
+    color: black;
+    font-weight: 800;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+.fst-pera{
+    font-weight: 600;
+    word-spacing: 3px;
+    margin-bottom: 40px;
+    color: rgb(128, 128, 128);
+    font-size: 1.1rem;
+}
+.meeting__section{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+.btn-meet{
+    background-color: #026e62;
+    color: white !important;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+.btn-meet i{
+    margin-right: 5px;
+}
+.input-div{
+    padding: 10px 15px;
+    margin: 0 8px 0 15px;
+    border-radius: 5px;
+    border: thin solid lightgray;
+    
+}
+.fa-keyboard{
+    color: grey;
+    margin-right: 5px;
+}
+.input{
+    border: none;
+    outline: none;
+    color: rgb(71, 71, 71);
+    font-weight: 500;
+}
+.btn-a{
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    color: #026e62 !important;
+    font-weight: 700 !important;
+}
+.btn-a:hover{
+    background-color: rgb(245, 245, 245);
+}
+.second-div{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 40px;
+}
+.caro-cap{
+    padding: 0 auto;    
+    width: 65%;
+    text-align: center;
+}
+.car-h{
+    margin-top: 20px;
+    font-weight: 700;
+}
+.car-p{
+    font-size: 0.9rem;
+    color: black;
+}
+.car-perv{
+    left: -50px;
+    color: black;
+}
+.perv-icon{
+    color: #026e62 !important;
+    background-color: black;
+}
+
+.car-next{
+    right: -50px;
+}
