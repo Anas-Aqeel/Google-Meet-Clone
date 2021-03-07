@@ -12,8 +12,7 @@ do {
 
 let timer ;
 const myPeer = new Peer(undefined, {
-  secure: true, 
-  host: 'https://google-meet-app.herokuapp.com/', 
+  host: '/', 
   port: 443,
   path:"/peerjs"
 })
