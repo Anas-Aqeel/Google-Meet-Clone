@@ -1,5 +1,5 @@
 let username;
-const socket = io('http://localhost:8000');
+const socket = io();
 var videoGrid = document.getElementById("video")
 var input = document.getElementById("input")
 let ul = document.getElementById('users')
@@ -12,9 +12,9 @@ do {
 
 let timer ;
 const myPeer = new Peer(undefined, {
-  path: '/peerjs',
-  host: '/',
-  port: 8000
+  secure: true, 
+  host: 'https://google-meet-app.herokuapp.com/', 
+  port: 443,
 })
 
 const peers = {}
