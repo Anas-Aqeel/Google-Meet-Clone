@@ -128,7 +128,7 @@ function connectToNewUser(userId, stream) {
 
 // === answering the call ====
 myPeer.on('call', call => {
-  navigator.mediaDevices.getUserMedia({  audio: true, 
+  navigator.mediaDevices.getUserMedia({  audio: { autoGainControl: false, channelCount: 2, echoCancellation: false, latency: 0, noiseSuppression: false, sampleRate: 48000, sampleSize: 16, volume: 1.0 } , 
                       video: {
                         mandatory: {
                                maxWidth: 640,
