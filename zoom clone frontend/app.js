@@ -128,23 +128,15 @@ function connectToNewUser(userId, stream) {
 
 // === answering the call ====
 myPeer.on('call', call => {
-  navigator.mediaDevices.getUserMedia({  audio: { autoGainControl: false, channelCount: 2, echoCancellation: false, latency: 0, noiseSuppression: false, sampleRate: 48000, sampleSize: 16, volume: 1.0 } , 
-                      video: {
-                        mandatory: {
-                               maxWidth: 640,
-                               maxHeight: 360,
-                               // maxAspectRatio:4/3,
-                               // maxFrameRate:1
-                              },
-                        quality: 7,
-                        width: { ideal: 320 },
-                        height: { ideal: 240 }
-                      }
-                    }).then((stream) => {
+  navigator.mediaDevices.getUserMedia({  audio: true ,video: true}).then((stream) => {
     call.answer(stream)
     let video = document.createElement('video')
     call.on('stream', videoStream => {
-      addVideoStream(video, videoStream)
+      // addVideoStream(video, videoStream)
+      video.srcObject = stream
+      video.classList.add('item')
+      videoGrid.appendChild(video)
+ 
     })
   })
 })
